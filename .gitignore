@@ -1,0 +1,14 @@
+# Latex Workshop Extension
+*.aux
+*.log
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.xml
+*.bcf
+main.pdf
+*.synctex.gz
+*.synctex(busy)
+.vscode
