@@ -50,7 +50,7 @@ In this paper, the datasets from SteamDB are used because matching filenames to 
 \end{table}
 
 \autoref{table:steam} shows the percentages of game engines on Steam from 2022 compared to 2018 data.
-In fact, with this comparison must be taken with a grain of salt because two different methods have been used. 
+In fact, with this comparison must be taken with a grain of salt because two different methods have been used.
 It is also difficult to say whether the 2022 method can attribute more game engines or simply more games were created using a particular game engine.
 This can be explained with the example of Unity.
 Unity has 35.62\% more share of all identified games in the last four years.
@@ -63,14 +63,37 @@ However, it could also be the case that more games in general have been created 
 The Godot Engine is not listed in \autoref{table:steam} because the paper providing the comparison data does not list the Godot Engine.
 At the time of the collected data, 1.15\% of all games created with the Godot Engine were identified.
 Compared to the other game engines on SteamDB, the Godot engine ranks 7th out of 65 recognized game engines.
-So there might be some relevance in the video game industry if the Godot Engine ranks so high. 
+So there might be some relevance in the video game industry if the Godot Engine ranks so high.
 % TODO: Graph X shows the games released per month.
 If you look at the games released per month, you can clearly see that in 2020, the number of games released has increased significantly.\\
 
 Before examining the reason in more detail, a similar comparison is first made with the data from itch.io.
 Compared to Steam, the digital sales platform itch.io mainly features only indie games.
-Since this paper focuses exactly on this type of games, this site provides an interesting data set. 
+Since this paper focuses exactly on this type of games, this site provides an interesting data set.
 Unlike Steam, itch.io has an official statistics website that provides information on game engines\cite{itchio-engines}.
 However, this data is unfortunately also incomplete, because this data is self-reported.
 So information could be missing or be incorrect here as well.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c c c c|}
+        \hline
+        Game Engine & 2018   & 2022    & Trend                             \\
+        \hline\hline
+        Unity       & 47.3\% & 49.75\% & \textcolor{PineGreen}{$\nearrow$} \\
+        Construct   & 12.3\% & 13.12\% & \textcolor{PineGreen}{$\nearrow$} \\
+        GameMaker   & 11.0\% & 7.32\%  & \textcolor{red}{$\searrow$}       \\
+        Twine       & 6.2\%  & 5.35\%  & \textcolor{red}{$\searrow$}       \\
+        RPG Maker   & 3.9\%  & 2.74\%  & \textcolor{red}{$\searrow$}       \\
+        Bitsy       & 3.3\%  & 3.11\%  & \textcolor{red}{$\searrow$}       \\
+        PICO-8      & 2.9\%  & 2.68\%  & \textcolor{red}{$\searrow$}       \\
+        Unreal      & 2.8\%  & 2.92\%  & \textcolor{PineGreen}{$\nearrow$} \\
+        Godot       & 2.5\%  & 5.55\%  & \textcolor{PineGreen}{$\nearrow$} \\
+        Ren'Py      & 2.0\%  & 1.93\%  & \textcolor{red}{$\searrow$}       \\
+        Other       & 5.9\%  & 5.55\%  & \textcolor{red}{$\searrow$}       \\
+        \hline
+    \end{tabular}
+    \caption{Percentage of total games identified on itch.io (data collected 2022-09-30)}
+    \label{table:itch}
+\end{table}
 
