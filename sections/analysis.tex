@@ -18,11 +18,58 @@ This survey showed that (besides publisher owned and own websites) most games ar
 
 Without exact details on Steam, it is difficult to track which game engine was used to develop a game.
 In the paper by Toftedahl and Engström mentioned above, a script is used that matches the games with articles on Wikipedia and then assigns game engines.
-Obviously, this procedure has problems and gaps in the data sets. 
+Obviously, this procedure has problems and gaps in the data sets.
 This is because not all games have information about the underlying game engine.
 There is also another method, which recognizes the used game engines by filenames with the help of pattern matching.
 The website SteamDB analyzes the game engines used for development based on this method\cite{steamdb-tech}.
 There are problems with this method as well.
-Gaps or false positives may exist due to unclear filenames. 
-In this paper, the datasets from SteamDB are used because matching filenames to game engines seems to be more accurate than matching the data to Wikipedia articles.
+Gaps or false positives may exist due to unclear filenames.
+In this paper, the datasets from SteamDB are used because matching filenames to game engines seems to be more accurate than matching the data to Wikipedia articles.\\
 
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c c c|}
+        \hline
+        Game Engine & 2018   & 2022    \\
+        \hline\hline
+        Unity       & 25.6\% & 61.22\% \\
+        Unreal      & 13.2\% & 15.91\% \\
+        Source      & 4.0\%  & 0.27\%  \\
+        CryEngine   & 3.5\%  & 0\%     \\
+        GameBryo    & 3.2\%  & 0\%     \\
+        IW          & 2.9\%  & 0\%     \\
+        Anvil       & 2.5\%  & 0\%     \\
+        id Tech     & 1.7\%  & 0.18\%  \\
+        Essence     & 1.1\%  & 0\%     \\
+        Clausewitz  & 1.0\%  & 0.03\%  \\
+        Other       & 48.4\% & 22.17\% \\
+        \hline
+    \end{tabular}
+    \caption{Percentage of total games identified on Steam (data collected 2022-09-30)}
+    \label{table:steam}
+\end{table}
+
+\autoref{table:steam} shows the percentages of game engines on Steam from 2022 compared to 2018 data.
+In fact, with this comparison must be taken with a grain of salt because two different methods have been used. 
+It is also difficult to say whether the 2022 method can attribute more game engines or simply more games were created using a particular game engine.
+This can be explained with the example of Unity.
+Unity has 35.62\% more share of all identified games in the last four years.
+This could be explained by the pattern matching method capturing more games.
+However, it could also be the case that more games in general have been created using the Unity game engine. \\
+
+% TODO: Graph Steam
+% TODO: Explain other engines?
+
+The Godot Engine is not listed in \autoref{table:steam} because the paper providing the comparison data does not list the Godot Engine.
+At the time of the collected data, 1.15\% of all games created with the Godot Engine were identified.
+Compared to the other game engines on SteamDB, the Godot engine ranks 7th out of 65 recognized game engines.
+So there might be some relevance in the video game industry if the Godot Engine ranks so high. 
+% TODO: Graph X shows the games released per month.
+If you look at the games released per month, you can clearly see that in 2020, the number of games released has increased significantly.\\
+
+Before examining the reason in more detail, a similar comparison is first made with the data from itch.io.
+Compared to Steam, the digital sales platform itch.io mainly features only indie games.
+Since this paper focuses exactly on this type of games, this site provides an interesting data set. 
+Unlike Steam, itch.io has an official statistics website that provides information on game engines.
+However, this data is unfortunately also incomplete, because this data is self-reported.
+So information could be missing or be incorrect here as well.
