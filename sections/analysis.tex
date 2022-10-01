@@ -114,17 +114,28 @@ The high percentage could be explained by the fact that many people are interest
 However, this is only an assumption that needs to be investigated further. \\
 
 The Unreal Engine already shows up in \autoref{table:steam} as the second most used game engine on Steam.
-However, on the itch.io platform, the Unreal Engine has only gained minimal popularity in the last four years.
+However, on itch.io, the Unreal Engine has only gained minimal popularity in the last four years.
 This is particularly interesting because it shows that the Unreal Engine has a low relevance among indie game developers.
 The Unreal Engine is often referred to as the game engine for AAA games\textcolor{red}{[?]}.
 This could be the reason why indie game developers have less interest in it. \\
 
-% TODO: add itch.io Graph
-
 The Godot Engine has gained a lot of popularity in the last four years.
 If you look at the underlying data, it becomes clear that the Godot Engine has more than double the percentage share than before.
-% TODO: describe graph
-% TODO: explain why unity excluded
+To be able to analyze the data even further, a separate script was written, which saves the games from itch.io with their release date as a CSV file.
+It should be mentioned that not all games could be fetched with this script.
+Despite the missing data sets of up to about 10\%, a trend plot for the game engines from \autoref{table:itch} can still be created.\\
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics[width=1.3\columnwidth]{figures/trend-graph.pdf}
+        \caption{\label{fig:trend-graph} Number of projects on itch.io as trend graph}
+    \end{center}
+\end{figure}
+
+This graph is shown in \autoref{fig:trend-graph}.
+However, Unity has so many projects that the details in the graph would be lost for the other game engines.
+For this reason, Unity is not present in the graph.
+It is clear to see that the Godot engine has gained a lot of popularity in 2020, overtaking Bitsy and Twine.
 % TODO: 2020 is important again
 \\
 
