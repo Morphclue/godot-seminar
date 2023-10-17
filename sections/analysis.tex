@@ -3,16 +3,16 @@ In the last section it became evident that the Godot Engine has managed to captu
 However, this does not directly address the central question of how relevant the Godot Engine is for indie game developers.
 To answer this question effectively, we must first establish a clear definition of what indie game development is.
 Just as the definition of a game engine is elusive, so is the definition of indie game development and indie games developed.
-The definition used here is from O'Donnell, which states that indie games focus on a few goals and can be developed on a smaller scale in terms of manpower\cite{indie-definition}.
+The definition used here is from O'Donnell, which states that indie games focus on a few goals and can be developed on a smaller scale in terms of manpower \cite{indie-definition}.
 An indie game development team is not financially supported by a larger company.
 This is in contrast to AAA titles, which are developed with high budgets and large teams.\\
 
 For this paper, the digital sales platforms Steam and itch.io were selected for investigation.
-On the one hand, this refers to a study by Toftedahl and Engström that provides comparative data from 2018\cite{game-engine-taxonomy}.
+On the one hand, this refers to a study by Toftedahl and Engström that provides comparative data from 2018 \cite{game-engine-taxonomy}.
 On the other hand, reference is made to a survey with 2700 video game developers.
 The focus in this paper is on PC and not on console or mobile games.
-This is because the survey ``State of the Game Industry'' from 2022 showed that 63\% are actively developing for PC and 58\% plan to do so in the next project as well\cite{gdc-2022}.
-In 2019, a survey of video game developers with nearly 4000 participants was conducted\cite{gdc-2019}.
+This is because the survey ``State of the Game Industry'' from 2022 showed that 63\% are actively developing for PC and 58\% plan to do so in the next project as well \cite{gdc-2022}.
+In 2019, a survey of video game developers with nearly 4000 participants was conducted \cite{gdc-2019}.
 This survey showed that (besides publisher owned and own websites) most games are sold on Steam and itch.io.\\
 
 Without exact details on Steam, it is difficult to track which game engine was used to develop a game.
@@ -20,7 +20,7 @@ In the paper by Toftedahl and Engström mentioned above, a script is used that m
 Obviously, this procedure has problems and gaps in the data sets.
 This is because not all games have information about the underlying game engine.
 There is also another method, which recognizes the used game engines by filenames with the help of pattern matching.
-The website SteamDB analyzes the game engines used for development based on this method\cite{steamdb-tech}.
+The website SteamDB analyzes the game engines used for development based on this method \cite{steamdb-tech}.
 There are problems with this method as well.
 Gaps or false positives may exist due to unclear filenames.
 In this paper, the datasets from SteamDB are used because matching filenames to game engines seems to be more accurate than matching the data to Wikipedia articles.\\
@@ -76,7 +76,7 @@ If you look at the apps released per month in \autoref{fig:godot-graph}, you can
 Before examining the reason in more detail, a similar comparison is first made with the data from itch.io.
 Compared to Steam, the digital sales platform itch.io mainly features indie games.
 Since this paper focuses exactly on this type of games, this site provides an interesting data set.
-Unlike Steam, itch.io has an official statistics website that provides information on game engines\cite{itchio-engines}.
+Unlike Steam, itch.io has an official statistics website that provides information on game engines \cite{itchio-engines}.
 However, this data is unfortunately also incomplete, because it is self-reported.
 So information could be missing or be incorrect here as well.
 
@@ -122,12 +122,12 @@ However, this is only an assumption that needs to be investigated further. \\
 The Unreal Engine already shows up in \autoref{table:steam} as the second most used game engine on Steam.
 However, on itch.io, the Unreal Engine has only gained minimal popularity in the last four years.
 This is particularly interesting because it shows that the Unreal Engine has a low relevance among indie game developers.
-The Unreal Engine is often referred to as the game engine for AAA games\cite{unreal-tripple-a-yager}\cite{unreal-tripple-a-india}.
+The Unreal Engine is often referred to as the game engine for AAA games \cite{unreal-tripple-a-yager, unreal-tripple-a-india}.
 This could be the reason why indie game developers have less interest in it. \\
 
 The Godot Engine has gained a lot of popularity in the last four years.
 If you look at the underlying data, it becomes clear that the Godot Engine has more than double the percentage share than before.
-To be able to analyze the data even further, a separate script was written, which saves the games from itch.io with their release date as a CSV file\cite{github-trend-itch}.
+To be able to analyze the data even further, a separate script was written, which saves the games from itch.io with their release date as a CSV file \cite{github-trend-itch}.
 It should be mentioned that not all games could be fetched with this script.
 Despite the missing data sets of up to about 10\%, a trend plot for the game engines from \autoref{table:itch} can still be created.
 
@@ -168,14 +168,14 @@ It is also difficult to say how high the percentage of actual indie game studios
         No engine   & -      & 3.1\%                                              & $\textcolor{ForestGreen}{\blacktriangleup 3.7\%}$  \\
         \hline
     \end{tabular}
-    \caption{Used game engines by GMTK Game Jam participants over the years\cite{gmtk-twitter}}
+    \caption{Used game engines by GMTK Game Jam participants over the years \cite{gmtk-twitter}}
     \label{table:gmtk}
 \end{table}
 
 On itch.io there are many games, which were created during a game jam.
 Game jams are defined as follows:
-\blockquote{A game jam is an accelerated opportunistic game creation event where a game is created in a relatively short timeframe exploring given design constraint(s) and end results are shared publically\cite{game-jam-definition}.}
-With around 18,000 - 22,000 participants and around 5,000 - 6,000 submissions, GMTK Game Jam is the largest past game jam event on itch.io\cite{itch-past-jams}.
+\blockquote{A game jam is an accelerated opportunistic game creation event where a game is created in a relatively short timeframe exploring given design constraint(s) and end results are shared publically \cite{game-jam-definition}.}
+With around 18,000 - 22,000 participants and around 5,000 - 6,000 submissions, GMTK Game Jam is the largest past game jam event on itch.io \cite{itch-past-jams}.
 \autoref{table:gmtk} shows the game engines used by participants in the events from 2020 to 2022.
 This table is clearly showing that the Godot Engine is the only game engine from the table to outperform the usage of the previous year two years in a row.
 This could be a clue that game jams on itch.io have ensured that the Godot Engine continues to gain relevance.
@@ -193,7 +193,7 @@ Unfortunately, this is beyond the scope of this paper and would need to be explo
 In this paper, the focus is specifically on the Godot Engine and its importance to the indie game industry.
 However, this work can provide the basis for which game engines should be compared with each other with regard to the indie game industry.\\
 
-To explore more about the Godot Engine, the Godot Community Poll from 2022 was examined\cite{godot-poll-results}.
+To explore more about the Godot Engine, the Godot Community Poll from 2022 was examined \cite{godot-poll-results}.
 This survey contains 5315 answers with a different set of questions.
 When asked about previous experience with other game engines, the top three were Unity (51\%), Other third party engine (30.6\%), and GameMaker (22\%).
 With Unity having a strong presence on both Steam and itch.io, it seems natural that developers would have been in contact with the game engine in advance.
