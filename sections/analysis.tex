@@ -25,24 +25,24 @@ In this paper, the datasets from SteamDB are used because matching filenames to 
 
 \begin{table}[h!]
     \centering
-    \begin{tabular}{|c c c|}
+    \begin{tabular}{|c c c c|}
         \hline
-        Game Engine & 2018   & 2022    \\
+        Game Engine & 2018   & 2022    & 2023    \\
         \hline\hline
-        Unity       & 25.6\% & 61.22\% \\
-        Unreal      & 13.2\% & 15.91\% \\
-        Source      & 4.0\%  & 0.27\%  \\
-        CryEngine   & 3.5\%  & 0.23\%  \\
-        GameBryo    & 3.2\%  & 0\%     \\
-        IW          & 2.9\%  & 0\%     \\
-        Anvil       & 2.5\%  & 0\%     \\
-        id Tech     & 1.7\%  & 0.18\%  \\
-        Essence     & 1.1\%  & 0\%     \\
-        Clausewitz  & 1.0\%  & 0.03\%  \\
-        Other       & 48.4\% & 22.17\% \\
+        Unity       & 25.6\% & 61.22\% & 60.04\% \\
+        Unreal      & 13.2\% & 15.91\% & 16.42\% \\
+        Source      & 4.0\%  & 0.27\%  & 0.23\%  \\
+        CryEngine   & 3.5\%  & 0.23\%  & 0.19\%  \\
+        GameBryo    & 3.2\%  & -       & -       \\
+        IW          & 2.9\%  & -       & -       \\
+        Anvil       & 2.5\%  & 0.05\%  & 0.05\%  \\
+        id Tech     & 1.7\%  & 0.18\%  & 0.15\%  \\
+        Essence     & 1.1\%  & -       & -       \\
+        Clausewitz  & 1.0\%  & 0.03\%  & 0.02\%  \\
+        Other       & 48.4\% & 22.17\% & 22.94\% \\
         \hline
     \end{tabular}
-    \caption{Percentage of total games identified on Steam (data collected 2022-09-30)}
+    \caption{Percentage of total games identified on Steam (data collected 2022-09-30 and 2023-10-21)}
     \label{table:steam}
 \end{table}
 
@@ -62,7 +62,7 @@ However, it could also be the case that more games in general have been created 
 \end{figure}
 
 The Godot Engine is not listed in \autoref{table:steam} because the paper providing the comparison data does not list the Godot Engine.
-At the time of the collected data, 1.15\% of all games created with the Godot Engine were identified.
+At the time of the collected data, 1.15\% of all games created with the Godot Engine were identified. % TODO: 2023 1.44%
 Compared to the other game engines on SteamDB, the Godot Engine ranks 7th out of 65 recognized game engines.
 So there might be some relevance in the video game industry if the Godot Engine ranks so high.
 In addition to that is important to understand that the percentages from \autoref{table:steam} are lower bounds.
