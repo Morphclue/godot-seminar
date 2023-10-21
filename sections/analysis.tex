@@ -14,14 +14,15 @@ Notably, the focus in this paper lies on PC and not on console or mobile games.
 This is because the survey ``State of the Game Industry'' from 2022 showed that 65\% are actively developing for PC and 57\% plan to do so in the next project as well \cite{gdc-2023}.
 In 2019, a survey involving nearly 4,000 video game developers highlighted that, aside from publisher-owned and individual websites, most games are primarily sold on Steam and itch.io. \cite{gdc-2019}\\
 
-It is challenging to precisely identify the game engine used in games available on Steam due to a lack of detailed information.
-In the paper by Toftedahl and Engström mentioned above, a script is used that matches the games with articles on Wikipedia and then assigns game engines.
+Identifying the game engine used in games available on Steam presents a significant challenge due to a lack of detailed information.
+In the paper by Toftedahl and Engström mentioned above, a script was used that matches games with articles on Wikipedia and subsequently assigns game engines.
 However, this procedure presents challenges and gaps in the data sets.
 This is because not all games possess information about the underlying game engine.
 Alternatively, another method involves recognizing the game engines used by analyzing filenames through pattern matching.
 The website SteamDB employs this method to deduce the game engines utilized in development \cite{steamdb-tech}.
-This approach also has limitations, including potential gaps or false positives due to ambiguous filenames.
-In this paper, the datasets from SteamDB are used because matching filenames to game engines yield more accurate results than matching the data to Wikipedia articles.\\
+While this approach provides valuable insights, it is not without its limitations, including the potential for gaps or false positives due to ambiguous filenames.
+In this paper, the datasets from SteamDB are used because matching filenames to game engines yield more accurate results than matching the data to Wikipedia articles.
+The Godot Engine is not listed in \autoref{table:steam} because the paper providing the comparison data does not list the Godot Engine. \\
 
 \begin{table}[h!]
     \centering
@@ -46,13 +47,22 @@ In this paper, the datasets from SteamDB are used because matching filenames to 
     \label{table:steam}
 \end{table}
 
-\autoref{table:steam} shows the percentages of game engines on Steam from 2022 compared to 2018 data.
-In fact, with this comparison must be taken with a grain of salt because two different methods have been used.
-It is also difficult to say whether the 2022 method can attribute more game engines or simply more games were created using a particular game engine.
-This can be explained with the example of Unity.
-Unity has 35.62\% more share of all identified games in the last four years.
+\autoref{table:steam} presents the percentages of game engines on Steam for the years 2018, 2022 and 2023.
+However, it's important to interpret this comparison cautiously, as two different methods were employed.
+The data from 2018 was collected using the Wikipedia method, while the data from 2022 and 2023 was collected using the pattern matching method.
+It is also difficult to say whether the newer method can attribute more game engines or simply more games were created using a particular game engine.
+To illustrate, consider Unity, which has 35.62\% more share of all identified games from 2018 to 2022.
 This could be explained by the pattern matching method capturing more games.
 However, it could also be the case that more games in general have been created using the Unity game engine.\\
+
+At the time of the collected data in 2022, 1.15\% of all games created with the Godot Engine were identified. 
+However, in 2023, this percentage increased to 1.44\%.
+Compared to the other game engines on SteamDB, the Godot Engine ranks 6th out of 65 recognized game engines.
+This ranking suggests a noteworthy level of relevance in the video game industry for the Godot Engine, given its relatively high position among recognized game engines.
+In addition to that it is important to understand that the percentages from \autoref{table:steam} represent lower bounds.
+Particularly in the case of the Godot engine, there could be a lot more games.
+This is due to the fact that the Godot Engine allows for the export of executables without a recognizable filename signature, making them unidentifiable by the SteamDB algorithm.
+Consequently, only a subset of games with specific filename patterns can be matched. \\
 
 \begin{figure}[h!]
     \begin{center}
@@ -61,16 +71,8 @@ However, it could also be the case that more games in general have been created 
     \end{center}
 \end{figure}
 
-The Godot Engine is not listed in \autoref{table:steam} because the paper providing the comparison data does not list the Godot Engine.
-At the time of the collected data, 1.15\% of all games created with the Godot Engine were identified. % TODO: 2023 1.44%
-Compared to the other game engines on SteamDB, the Godot Engine ranks 7th out of 65 recognized game engines.
-So there might be some relevance in the video game industry if the Godot Engine ranks so high.
-In addition to that is important to understand that the percentages from \autoref{table:steam} are lower bounds.
-Especially in the case of the Godot engine, there could be a lot more games.
-With the Godot Engine it is possible to export an executable that does not have a recognizable filename signature that can be matched by the SteamDB algorithm.
-Therefore, it only matches a subset of games with a specific filename pattern.
-If you look at the apps released per month in \autoref{fig:godot-graph}, you can clearly see that in 2020, the number of games released has increased significantly.\\
-
+An examination of the monthly app releases depicted in \autoref{fig:godot-graph}, a clear trend emerges: in 2020, there was a significant increase in the number of released games.
+This increase in game releases prompts further investigation to understand the underlying reasons.
 Before examining the reason in more detail, a similar comparison is first made with the data from itch.io.
 Compared to Steam, the digital sales platform itch.io mainly features indie games.
 Since this paper focuses exactly on this type of games, this site provides an interesting data set.
