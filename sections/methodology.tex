@@ -29,6 +29,11 @@ The website SteamDB employs this method to deduce the game engines utilized in d
 While this approach provides valuable insights, it is not without its limitations, including the potential for gaps or false positives due to ambiguous filenames.
 In this paper, the datasets from SteamDB are used because matching filenames to game engines yield more accurate results than matching the data to Wikipedia articles. \\
 
-% TODO: procedure for itch.io 
-% TODO: procedure for itch.io script and data
-% GMTK Game Jams
+Analyzing the data from itch.io proves to be more straightforward because the website provides a list of game engines used in development with the number of games for each engine. %TODO: cite
+This structured presentation of data facilitates ease of access and analysis.
+This approach aligns with the methodology employed by Toftedahl and Engström in their research.
+However, it is important to acknowledge that this method captures a static snapshot of the data at a given point in time.
+To address this limitation a script was developed that extracts data from itch.io's RSS feed in XML format, specifically recording the publication date of each game.
+This additional temporal dimension allows for the creation of a time series, enabling a more in-depth analysis of used game engines over time. \\
+
+% TODO: GMTK Game Jams
