@@ -86,8 +86,6 @@ Therefore, there may be gaps or inaccuracies in the information, a limitation in
 
 Similar to Steam, the data from itch.io can be compared to the 2018 reference paper using the most current data available from 2022 and 2023.
 The consistent data collection method allows for direct comparisons, as illustrated in \autoref{table:itch}.
-% FIXME(remove): Game engines that have experienced an increase in their percentage of total games developed between 2018 and 2023 are highlighted in green, indicating a positive trend.
-% FIXME(remove) Conversely, game engines that have seen a decrease are highlighted in red, suggesting a decline in their usage over the same period.
 Upon comparing the data presented in \autoref{table:steam} and \autoref{table:itch}, Unity stands out as a prevalent game engine.
 In both 2022 and 2023, Unity consistently constitutes over half of all games on Steam and nearly half on itch.io.
 This dominance is particularly striking when considering the second-ranking game engines, which represent approximately 16\% of games on Steam and roughly 14\% on itch.io in 2023.
@@ -102,8 +100,8 @@ However, this is only an assumption that needs to be investigated further. \\
 
 While the Unreal Engine prominently appears as the second most used game engine on Steam, its presence on itch.io has seen only marginal growth over the past four to five years.
 This is particularly interesting as it suggests that the Unreal Engine holds a limited relevance among indie game developers.
-The Unreal Engine is often referred to as the game engine for AAA games \cite{unreal-tripple-a-yager, unreal-tripple-a-india}.
-This could be one of the reasons why indie game developers have less interest in this game engine. \\
+% refactor(discussion) The Unreal Engine is often referred to as the game engine for AAA games \cite{unreal-tripple-a-yager, unreal-tripple-a-india}.
+% refactor(discussion) This could be one of the reasons why indie game developers have less interest in this game engine. \\
 
 Looking at \autoref{table:itch}, it is evident that the Godot Engine has experienced remarkable growth in popularity on itch.io.
 To delve deeper into this trend, a dedicated script was developed to compile games from itch.io along with their release dates, resulting in a CSV file \cite{github-trend-itch}.
@@ -120,10 +118,10 @@ Despite the missing data sets of up to about 10\% of the games, it is still poss
 This graph is shown in \autoref{fig:trend-graph}.
 Notably, Unity, due to its large number of projects, has been excluded from the graph to ensure better visibility and clarity for the other game engines.
 It is evident that the Godot Engine has gained a significant surge in popularity in 2020, surpassing both Bitsy and Twine.
-However, pinpointing the exact reasons for the Godot Engine's remarkable growth from the beginning of 2020 is challenging due to the multitude of potential factors involved.
-Likewise, important events may have taken place before 2020 that just took longer to become noticeable.
-Therefore, only assumptions can be made about the growth in popularity.
-Furthermore, this analysis has its limitations, as it relies on the quantity of games published.
+% refactor(discussion) However, pinpointing the exact reasons for the Godot Engine's remarkable growth from the beginning of 2020 is challenging due to the multitude of potential factors involved.
+% refactor(discussion) Likewise, important events may have taken place before 2020 that just took longer to become noticeable.
+% refactor(discussion) Therefore, only assumptions can be made about the growth in popularity.
+This analysis has its limitations, as it relies on the quantity of games published.
 It does not consider factors like the quality or number of games published by individual publishers.
 Determining the percentage of actual indie game studios is also challenging, because not every publisher was analyzed individually.
 
@@ -150,21 +148,22 @@ Determining the percentage of actual indie game studios is also challenging, bec
 An interesting distinction on itch.io, which is not as prominent on Steam, is the prevalence of games created during game jams, which are defined as follows:
 \blockquote{A game jam is an accelerated opportunistic game creation event where a game is created in a relatively short timeframe exploring given design constraint(s) and end results are shared publically \cite{game-jam-definition}.}
 With around 18,000 - 23,000 participants and around 6,000 - 7,000 submissions, GMTK Game Jam is the largest past game jam event on itch.io \cite{gmtk-game-jam-2021, gmtk-game-jam-2022, gmtk-game-jam-2023}.
-\autoref{table:gmtk} shows the game engines used by participants in the events from 2020 to 2022.
-This table is clearly showing that the Godot Engine is the only game engine from the table to outperform the usage of the previous year three years in a row.
-This observation raises the possibility that game jams on itch.io may contribute to the sustained relevance of the Godot Engine.
-It is important to consider that the overall popularity of a game engine could lead to its increased utilization in game jams. \\
+\autoref{table:gmtk} shows the game engines used by participants in the events from 2020 to 2023.
+This table is clearly showing that the Godot Engine is the only game engine from the table to outperform the usage of the previous year three years in a row. \\
+% refactor(discussion) This observation raises the possibility that game jams on itch.io may contribute to the sustained relevance of the Godot Engine.
+% refactor(discussion) It is important to consider that the overall popularity of a game engine could lead to its increased utilization in game jams. \\
 
-To make more accurate assessments, it is essential to compare the Godot Engine with other game engines that have gained popularity on itch.io.
-The Godot Engine can be categorized as a general-purpose game engine, covering a wide range of game genres.
-According to Toftedahl and Engström, this puts it in the same category as the Unreal Engine and Unity.
-Construct, on the other hand, is a special purpose game engine.
-In the introduction, it was already explained that game engines should be compared with each other in terms of a specific purpose.
-For this reason, Construct should not be included in a comparison.
-A meaningful comparison would require a feature matrix, benchmarks, or other technical aspects, which is beyond the scope of this paper and warrants a separate investigation.
-In this paper, the focus is specifically on the Godot Engine and its significance within the indie game industry.
-However, this work can provide the basis for which game engines should be compared with each in the context of the indie game industry.\\
+% refactor(discussion) To make more accurate assessments, it is essential to compare the Godot Engine with other game engines that have gained popularity on itch.io.
+% refactor(discussion) The Godot Engine can be categorized as a general-purpose game engine, covering a wide range of game genres.
+% refactor(discussion) According to Toftedahl and Engström, this puts it in the same category as the Unreal Engine and Unity.
+% refactor(discussion) Construct, on the other hand, is a special purpose game engine.
+% refactor(discussion) In the introduction, it was already explained that game engines should be compared with each other in terms of a specific purpose.
+% refactor(discussion) For this reason, Construct should not be included in a comparison.
+% refactor(discussion) A meaningful comparison would require a feature matrix, benchmarks, or other technical aspects, which is beyond the scope of this paper and warrants a separate investigation.
+% refactor(discussion) In this paper, the focus is specifically on the Godot Engine and its significance within the indie game industry.
+% refactor(discussion) However, this work can provide the basis for which game engines should be compared with each in the context of the indie game industry.\\
 
+% TODO: analyze Poll 2023
 To explore more about the Godot Engine, the Godot Community Poll from 2022 was examined \cite{godot-poll-results}.
 This survey contains 5315 answers to a variety of questions.
 When asked about previous experience with other game engines, the top three were Unity (51\%), Other third party engine (30.6\%), and GameMaker (22\%).
@@ -176,24 +175,24 @@ It could therefore be possible that these developers have switched from GameMake
 
 If we look at the data for the usage of the Godot Engine in the poll, we can see that 56.56\% of the respondents primarily use the Godot Engine for 2D game development.
 This is in contrast to the usage of 35.22\% in 3D game development.
-It can be said that the Godot Engine has the possibility to develop 2D, 3D and especially XR, but it is primarily used for 2D.
-Several factors could contribute to this trend.
-On one hand, the Godot Engine could provide more robust functionality for 2D game development compared to its 3D capabilities. 
-Additionally, the workload associated with 3D game development is typically higher than that of 2D, which may pose challenges for indie game developers, leading them to favor 2D development.\\
+It can be said that the Godot Engine has the possibility to develop 2D, 3D and especially XR, but it is primarily used for 2D. \\
+% refactor(discussion) Several factors could contribute to this trend.
+% refactor(discussion) On one hand, the Godot Engine could provide more robust functionality for 2D game development compared to its 3D capabilities. 
+% refactor(discussion) Additionally, the workload associated with 3D game development is typically higher than that of 2D, which may pose challenges for indie game developers, leading them to favor 2D development.\\
 
 The survey's focus on indie game developers becomes evident when examining the respondents profiles.
 A substantial 84\% of participants stated that they use the Godot Engine as a hobby, while 9\% identified themselves as full-time indie game developers. 
 According to the definition outlined in this paper, hobby developers fall under the category of indie game developers, as they share common characteristics such as focusing on specific goals, lacking financial support from larger companies, and working in small teams. 
 This is further supported by the finding that 97.9\% work on their project alone or in a team of up to five people.
 Furthermore, the survey reveals that 83.7\% of respondents do not earn any income from their games, emphasizing their indie status.
-Additionally, the two most prevalent digital sales platforms among respondents are itch.io (7.1\%) and Steam (6\%).
-The higher representation of itch.io over Steam in the survey data may suggest that the Godot Engine holds greater relevance for indie game developers. \\
+Additionally, the two most prevalent digital sales platforms among respondents are itch.io (7.1\%) and Steam (6\%). \\
+% refactor(discussion) The higher representation of itch.io over Steam in the survey data may suggest that the Godot Engine holds greater relevance for indie game developers. 
 
 The survey data provides insights into the increasing relevance of the Godot Engine in 2020
 The majority of respondents (22.2\%) had already learned about the Godot Engine in 2019.
 However, most of them (21.9\%) started using the engine for programming in the following year, 2020.
-This finding supports the statement that there may have been important events before 2020 that took longer to convince people to develop.
-A hypothetical scenario could involve an indie game developer who shared their progress with the Godot Engine through individual YouTube videos.
-These videos may have drawn attention to the Godot Engine in 2019.
-As interest in the engine grew, the developer may have decided to publish tutorials in 2020, motivating many individuals to begin development with the Godot Engine.
-It's essential to note that this scenario is just one possibility among many, and the actual reasons for the increase in Godot Engine usage in 2020 are likely diverse.
+% refactor(discussion) This finding supports the statement that there may have been important events before 2020 that took longer to convince people to develop.
+% refactor(discussion) A hypothetical scenario could involve an indie game developer who shared their progress with the Godot Engine through individual YouTube videos.
+% refactor(discussion) These videos may have drawn attention to the Godot Engine in 2019.
+% refactor(discussion) As interest in the engine grew, the developer may have decided to publish tutorials in 2020, motivating many individuals to begin development with the Godot Engine.
+% refactor(discussion) It's essential to note that this scenario is just one possibility among many, and the actual reasons for the increase in Godot Engine usage in 2020 are likely diverse.
