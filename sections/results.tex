@@ -3,36 +3,38 @@ When examining the presence of various game engines on Steam for 2018, 2022, and
 The following \autoref{table:steam} presents the percentages of game engines on Steam for these years.
 
 \begin{table}[ht!]
-    \centering
-    \begin{tabular}{|l c c c|}
-        \hline
-        Game Engine & 2018   & 2022    & 2023    \\
-        \hline\hline
-        Unity       & 25.6\% & 61.22\% & $\textcolor{red}{\blacktriangledown 60.04\%}$  \\
-        Unreal      & 13.2\% & 15.91\% & $\textcolor{ForestGreen}{\blacktriangleup 16.42\%}$  \\
-        Source      & 4.0\%  & 0.27\%  & $\textcolor{red}{\blacktriangledown 0.23\%}$   \\
-        CryEngine   & 3.5\%  & 0.23\%  & $\textcolor{red}{\blacktriangledown 0.19\%}$   \\
-        GameBryo    & 3.2\%  & -       & -       \\
-        IW          & 2.9\%  & -       & -       \\
-        Anvil       & 2.5\%  & 0.05\%  & $\textcolor{gray}{\bullet 0.05\%}$   \\
-        id Tech     & 1.7\%  & 0.18\%  & $\textcolor{red}{\blacktriangledown 0.15\%}$   \\
-        Essence     & 1.1\%  & -       & -       \\
-        Clausewitz  & 1.0\%  & 0.03\%  & $\textcolor{red}{\blacktriangledown 0.02\% }$  \\
-        Other       & 48.4\% & 22.17\% & $\textcolor{ForestGreen}{\blacktriangleup 22.94\%}$  \\
-        \hline
-    \end{tabular}
+    \resizebox{\columnwidth}{!}{
+        \centering
+        \begin{tabular}{|l c c c|}
+            \hline
+            Game Engine & 2018   & 2022    & 2023                                                \\
+            \hline\hline
+            Unity       & 25.6\% & 61.22\% & $\textcolor{red}{\blacktriangledown 60.04\%}$       \\
+            Unreal      & 13.2\% & 15.91\% & $\textcolor{ForestGreen}{\blacktriangleup 16.42\%}$ \\
+            Source      & 4.0\%  & 0.27\%  & $\textcolor{red}{\blacktriangledown 0.23\%}$        \\
+            CryEngine   & 3.5\%  & 0.23\%  & $\textcolor{red}{\blacktriangledown 0.19\%}$        \\
+            GameBryo    & 3.2\%  & -       & -                                                   \\
+            IW          & 2.9\%  & -       & -                                                   \\
+            Anvil       & 2.5\%  & 0.05\%  & $\textcolor{gray}{\bullet 0.05\%}$                  \\
+            id Tech     & 1.7\%  & 0.18\%  & $\textcolor{red}{\blacktriangledown 0.15\%}$        \\
+            Essence     & 1.1\%  & -       & -                                                   \\
+            Clausewitz  & 1.0\%  & 0.03\%  & $\textcolor{red}{\blacktriangledown 0.02\% }$       \\
+            Other       & 48.4\% & 22.17\% & $\textcolor{ForestGreen}{\blacktriangleup 22.94\%}$ \\
+            \hline
+        \end{tabular}
+    }
     \caption{Percentage of total games identified on Steam (data collected 2022-09-30 and 2023-10-21)}
     \label{table:steam}
 \end{table}
 
 Game engines that have experienced an increase in their percentage of total games developed in comparison to the previous year(s) are highlighted in green, indicating a positive trend, while those that have seen a decrease are highlighted in red, suggesting a decline in their usage over the same period.
-The data from 2018 was collected using the Wikipedia method, while the data from 2022 and 2023 was collected using the pattern matching method. 
-Color-coding in \autoref{table:steam} is missing for the column for 2022. 
+The data from 2018 was collected using the Wikipedia method, while the data from 2022 and 2023 was collected using the pattern matching method.
+Color-coding in \autoref{table:steam} is missing for the column for 2022.
 This is due to the differing data collection methods used in 2018.
 It is difficult to say whether the newer method can attribute more game engines or simply more games were created using a particular game engine.
 To illustrate, consider Unity, which has 35.62\% more share of all identified games from 2018 to 2022.
 Additionally, it is worth noting that among the game engines analyzed, only the Unreal Engine has consistently exhibited growth over the various years.
-This trend holds true when considering both the complete dataset, which includes 2018 data, and the dataset from 2022 and 2023 alone. 
+This trend holds true when considering both the complete dataset, which includes 2018 data, and the dataset from 2022 and 2023 alone.
 The Godot Engine is not listed in \autoref{table:steam} because the paper from Toftedahl and Engström did not include it in their analysis.
 Despite this omission, the data remains valuable in shedding light on changing market dynamics. \\
 
@@ -62,24 +64,24 @@ Therefore, there may be gaps or inaccuracies in the information, a limitation in
 
 \begin{table}[ht!]
     \resizebox{\columnwidth}{!}{
-    \centering
-    \begin{tabular}{|l c c c|}
-        \hline
-        Game Engine & 2018   & 2022                                                & 2023                                                \\
-        \hline\hline
-        Unity       & 47.3\% & $\textcolor{ForestGreen}{\blacktriangleup 49.75\%}$ & $\textcolor{red}{\blacktriangledown 46.33\%}$       \\
-        Construct   & 12.3\% & $\textcolor{ForestGreen}{\blacktriangleup 13.12\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 13.82\%}$ \\
-        GameMaker   & 11.0\% & $\textcolor{red}{\blacktriangledown 7.32\%}$        & $\textcolor{red}{\blacktriangledown 6.95\%}$        \\
-        Twine       & 6.2\%  & $\textcolor{red}{\blacktriangledown 5.35\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 6.03\%}$  \\
-        RPG Maker   & 3.9\%  & $\textcolor{red}{\blacktriangledown 2.74\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 2.76\%}$  \\
-        Bitsy       & 3.3\%  & $\textcolor{red}{\blacktriangledown 3.11\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 3.18\%}$  \\
-        PICO-8      & 2.9\%  & $\textcolor{red}{\blacktriangledown 2.68\%}$        & $\textcolor{red}{\blacktriangledown 2.60\%}$        \\
-        Unreal      & 2.8\%  & $\textcolor{ForestGreen}{\blacktriangleup 2.92\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 3.01\%}$  \\
-        Godot       & 2.5\%  & $\textcolor{ForestGreen}{\blacktriangleup 5.55\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 7.51\%}$  \\
-        Ren'Py      & 2.0\%  & $\textcolor{red}{\blacktriangledown 1.93\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 2.07\%}$  \\
-        Other       & 5.9\%  & $\textcolor{red}{\blacktriangledown 5.55\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 5.75\%}$  \\
-        \hline
-    \end{tabular}
+        \centering
+        \begin{tabular}{|l c c c|}
+            \hline
+            Game Engine & 2018   & 2022                                                & 2023                                                \\
+            \hline\hline
+            Unity       & 47.3\% & $\textcolor{ForestGreen}{\blacktriangleup 49.75\%}$ & $\textcolor{red}{\blacktriangledown 46.33\%}$       \\
+            Construct   & 12.3\% & $\textcolor{ForestGreen}{\blacktriangleup 13.12\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 13.82\%}$ \\
+            GameMaker   & 11.0\% & $\textcolor{red}{\blacktriangledown 7.32\%}$        & $\textcolor{red}{\blacktriangledown 6.95\%}$        \\
+            Twine       & 6.2\%  & $\textcolor{red}{\blacktriangledown 5.35\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 6.03\%}$  \\
+            RPG Maker   & 3.9\%  & $\textcolor{red}{\blacktriangledown 2.74\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 2.76\%}$  \\
+            Bitsy       & 3.3\%  & $\textcolor{red}{\blacktriangledown 3.11\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 3.18\%}$  \\
+            PICO-8      & 2.9\%  & $\textcolor{red}{\blacktriangledown 2.68\%}$        & $\textcolor{red}{\blacktriangledown 2.60\%}$        \\
+            Unreal      & 2.8\%  & $\textcolor{ForestGreen}{\blacktriangleup 2.92\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 3.01\%}$  \\
+            Godot       & 2.5\%  & $\textcolor{ForestGreen}{\blacktriangleup 5.55\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 7.51\%}$  \\
+            Ren'Py      & 2.0\%  & $\textcolor{red}{\blacktriangledown 1.93\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 2.07\%}$  \\
+            Other       & 5.9\%  & $\textcolor{red}{\blacktriangledown 5.55\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 5.75\%}$  \\
+            \hline
+        \end{tabular}
     }
     \caption{Percentage of total games identified on itch.io (data collected 2022-09-30 and 2023-10-21)}
     \label{table:itch}
@@ -120,21 +122,21 @@ Determining the percentage of actual indie game studios is also challenging, bec
 
 \begin{table}[ht!]
     \resizebox{\columnwidth}{!}{
-    \centering
-    \begin{tabular}{|l c c c c|}
-        \hline
-        Game Engine & 2020   & 2021                                               & 2022                                               & 2023                                             \\
-        \hline\hline
-        Unity       & 62.2\% & $\textcolor{red}{\blacktriangledown 61.6\%}$       & $\textcolor{red}{\blacktriangledown 61.1\%}$       & $\textcolor{red}{\blacktriangledown 59\%}$       \\
-        Godot       & 12.2\% & $\textcolor{ForestGreen}{\blacktriangleup 13.1\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 15.6\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 19\%}$ \\
-        GameMaker   & 10.9\% & $\textcolor{red}{\blacktriangledown 8.9\% }$       & $\textcolor{red}{\blacktriangledown 6.1\%}$        & $\textcolor{red}{\blacktriangledown 5\%}$        \\
-        Unreal      & -      & 4.2\%                                              & $\textcolor{ForestGreen}{\blacktriangleup 4.8\%}$  & -                                                \\
-        Construct   & 1.7\%  & $\textcolor{ForestGreen}{\blacktriangleup 2.4\%}$  & $\textcolor{red}{\blacktriangledown 1.7\%}$        & -                                                \\
-        Stencyl     & 0.1\%  & 0.1\%                                              & -                                                  & -                                                \\
-        Other       & 12.9\% & $\textcolor{red}{\blacktriangledown 6.5\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 7.0\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 17\%}$ \\
-        No engine   & -      & 3.1\%                                              & $\textcolor{ForestGreen}{\blacktriangleup 3.7\%}$  & -                                                \\
-        \hline
-    \end{tabular}
+        \centering
+        \begin{tabular}{|l c c c c|}
+            \hline
+            Game Engine & 2020   & 2021                                               & 2022                                               & 2023                                             \\
+            \hline\hline
+            Unity       & 62.2\% & $\textcolor{red}{\blacktriangledown 61.6\%}$       & $\textcolor{red}{\blacktriangledown 61.1\%}$       & $\textcolor{red}{\blacktriangledown 59\%}$       \\
+            Godot       & 12.2\% & $\textcolor{ForestGreen}{\blacktriangleup 13.1\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 15.6\%}$ & $\textcolor{ForestGreen}{\blacktriangleup 19\%}$ \\
+            GameMaker   & 10.9\% & $\textcolor{red}{\blacktriangledown 8.9\% }$       & $\textcolor{red}{\blacktriangledown 6.1\%}$        & $\textcolor{red}{\blacktriangledown 5\%}$        \\
+            Unreal      & -      & 4.2\%                                              & $\textcolor{ForestGreen}{\blacktriangleup 4.8\%}$  & -                                                \\
+            Construct   & 1.7\%  & $\textcolor{ForestGreen}{\blacktriangleup 2.4\%}$  & $\textcolor{red}{\blacktriangledown 1.7\%}$        & -                                                \\
+            Stencyl     & 0.1\%  & 0.1\%                                              & -                                                  & -                                                \\
+            Other       & 12.9\% & $\textcolor{red}{\blacktriangledown 6.5\%}$        & $\textcolor{ForestGreen}{\blacktriangleup 7.0\%}$  & $\textcolor{ForestGreen}{\blacktriangleup 17\%}$ \\
+            No engine   & -      & 3.1\%                                              & $\textcolor{ForestGreen}{\blacktriangleup 3.7\%}$  & -                                                \\
+            \hline
+        \end{tabular}
     }
     \caption{Used game engines by GMTK Game Jam participants over the years \cite{gmtk-twitter}}
     \label{table:gmtk}
@@ -156,8 +158,8 @@ However, most did not start development with the engine until the following year
 The surveys also clearly show that the game engine is mainly used for 2D game development.\\
 
 The survey from 2022 sheds light on further facts that are relevant to indie game development.
-A substantial 84\% of participants stated that they use the Godot Engine as a hobby, while 9\% identified themselves as full-time indie game developers. 
-According to the definition outlined in this paper, hobby developers fall under the category of indie game developers, as they share common characteristics such as focusing on specific goals, lacking financial support from larger companies, and working in small teams. 
+A substantial 84\% of participants stated that they use the Godot Engine as a hobby, while 9\% identified themselves as full-time indie game developers.
+According to the definition outlined in this paper, hobby developers fall under the category of indie game developers, as they share common characteristics such as focusing on specific goals, lacking financial support from larger companies, and working in small teams.
 This is further supported by the finding that 97.9\% work on their project alone or in a team of up to five people.
 Furthermore, the survey reveals that 83.7\% of respondents do not earn any income from their games, emphasizing their indie status.
 Additionally, the two most prevalent digital sales platforms among respondents are itch.io (7.1\%) and Steam (6\%). \\
