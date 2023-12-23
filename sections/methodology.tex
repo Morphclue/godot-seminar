@@ -1,0 +1,37 @@
+\section{Methodology}
+In the last section it became evident that the Godot Engine has managed to capture the attention of larger companies, suggesting a degree of relevance in the video game industry.
+However, this does not directly address the central question of how relevant the Godot Engine is for indie game developers.
+To effectively answer this question, we must first establish a clear definition of indie game development.
+Just as the definition of a game engine is elusive, so is the definition of indie game development.
+The definition used here is from O'Donnell, who states that indie games focus on a few goals and can be developed on a smaller scale in terms of manpower \cite{indie-definition}.
+An indie game development team operates without financial backing from a larger company, distinguishing it from AAA titles developed with substantial budgets and large teams. \\
+
+To investigate the relevance of the Godot Engine for indie game developers, a comprehensive literature review was conducted.
+It is important to note that this research was not limited to scholarly articles but also included gray literature.
+This is because the Godot Engine is a relatively new game engine, and there is a lack of scholarly articles on the topic.
+The gray literature used in this paper was carefully selected to ensure reliable and trustworthy information. \\ 
+
+For this paper, the digital sales platforms Steam and itch.io were selected for investigation.
+Firstly, it aligns with a study conducted by Toftedahl and Engström that provides comparative data from 2018 \cite{game-engine-taxonomy}.
+Secondly, reference is made to a survey named ``State of the Game Industry'' from 2023 encompassing 2,300 video game developers \cite{gdc-2023}.
+Notably, the focus in this paper lies on PC and not on console or mobile games.
+This is because the mentioned survey from 2023 showed that 65\% of the respondents are actively developing for PC and 57\% plan to do so in the next project as well.
+In 2019, a survey involving nearly 4,000 video game developers highlighted that, aside from publisher-owned and individual websites, most games are primarily sold on Steam and itch.io \cite{gdc-2019}.\\
+
+Identifying the game engine used in games available on Steam presents a significant challenge due to a lack of detailed information.
+In the paper by Toftedahl and Engström mentioned above, a script was used that matches games with articles on Wikipedia and subsequently assigns game engines.
+However, this procedure presents challenges and gaps in the data sets.
+This is because not all games provide information about the underlying game engine. \\
+
+Alternatively, another method involves recognizing the game engines used by analyzing filenames through pattern matching.
+The website SteamDB employs this method to deduce the game engines utilized in development \cite{steamdb-tech}.
+While this approach provides valuable insights, it is not without its limitations, including the potential for gaps or false positives due to ambiguous filenames.
+In this paper, the datasets from SteamDB are used because matching filenames to game engines yield more accurate results than matching the data to Wikipedia articles.
+In addition, the different versions of the id Tech engine were combined as one. \\
+
+Analyzing the data from itch.io proves to be more straightforward because the website provides a list of game engines used in development with the number of games for each engine.
+This structured presentation of data facilitates ease of access and analysis.
+This approach aligns with the methodology employed by Toftedahl and Engström in their research.
+However, it is important to acknowledge that this method captures a static snapshot of the data at a given point in time.
+To address this limitation a script was developed that extracts data from itch.io's RSS feed in XML format, specifically recording the publication date of each game \cite{github-trend-itch}.
+This additional temporal dimension allows for the creation of a time series, enabling a more in-depth analysis of used game engines over time.
