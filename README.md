@@ -1,2 +1,13 @@
 # godot-seminar
-Seminar paper about Godot Engine for Indie Developers
+A paper I've written for a seminar on the Godot Engine.
+It's about current trends in indie game development and how this relates to the Godot Engine.
+The title is "On the relevance of the Godot Engine for indie game development".
+
+### Abstract
+This paper examines the relevance of the Godot Engine in the indie game industry.
+The Godot Engine is a relatively new game engine from 2014 and competes with leading market players.
+To get to the bottom of its relevance, two major online sales platforms and the game engines that are commonly used, Steam and itch.io, are examined.
+Mainly, these findings are compared with reference data from 2018.
+It turns out that the Godot engine has gained massive relevance in 2020 and now seems to be one of the leading players in the indie game industry.
+The exact causes are difficult to determine.
+However, this paper provides many clues for further research in this area.
